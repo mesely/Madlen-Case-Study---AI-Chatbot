@@ -1,5 +1,8 @@
 # MADLEN CASE STUDY - Full Stack AI Assistant
 
+## Demo Video
+https://www.youtube.com/watch?v=u3WOZcs7uyw
+
 Bu doküman, Madlen AI projesinin mimari kararlarını, teknik altyapısını, kullanıcı deneyimi (UX) prensiplerini ve çalıştırma talimatlarını içerir. Proje, modern yazılım prensipleri gözetilerek geliştirilmiş, uçtan uca izlenebilir (observable) ve çok modlu (multi-modal) bir yapay zeka asistanıdır.
 
 ## 1. Proje Özeti
