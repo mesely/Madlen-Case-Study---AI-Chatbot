@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Veritabanı
+  postgres:
+    image: postgres:15-alpine
+    container_name: madlen_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: madlen_chat
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: madlen_jaeger
+    ports:
+      - "16686:16686" # Arayüz portu
+      - "4317:4317"   # Telemetri veri girişi
+      - "4318:4318"
+
+volumes:
+  postgres_data:
